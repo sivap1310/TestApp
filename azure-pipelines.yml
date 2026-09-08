@@ -13,3 +13,7 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: DotNetCoreCLI@2
+  inputs:
+    azureSubscription: 'Azure subscription 1(c0e8c160-1082-47d2-93d3-bdf3f0e898ab)'
+    command: 'build'
