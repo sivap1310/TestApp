@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TestWebAPI v1");
-        c.RoutePrefix = string.Empty; // serve the UI at app's root
+        c.RoutePrefix = string.Empty; // serve the UI at app's root jghjghg
     });
 }
 
