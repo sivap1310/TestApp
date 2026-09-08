@@ -29,7 +29,7 @@ steps:
     testResultsFormat: 'VSTest'
     testResultsFiles: '**/*.trx'
 
-- script: dotnet publish SampleApi/SampleApi.csproj -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
+- script: dotnet publish TestWebAPI/TestWebAPI.csproj -c $(buildConfiguration) -o $(Build.ArtifactStagingDirectory)
   displayName: 'Publish'
 
 - task: PublishBuildArtifacts@1
